@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Recommender System Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .success { border-color: #4CAF50; background-color: #f0fff0; }
+        .error { border-color: #f44336; background-color: #fff0f0; }
+        .loading { border-color: #ff9800; background-color: #fff8f0; }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover { background: #0056b3; }
+        .result {
+            margin-top: 10px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 3px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🩺 Doctor Recommender System Test</h1>
+        <p>Use this page to test if all services are working correctly.</p>
+
+        <div id="mlTest" class="test-section">
+            <h3>1. ML Service Test (Port 8000)</h3>
+            <button onclick="testMLService()">Test ML API</button>
+            <div id="mlResult" class="result"></div>
+        </div>
+
+        <div id="backendTest" class="test-section">
+            <h3>2. Backend Service Test (Port 5000)</h3>
+            <button onclick="testBackendService()">Test Backend API</button>
+            <div id="backendResult" class="result"></div>
+        </div>
+
+        <div id="fullTest" class="test-section">
+            <h3>3. Full System Test</h3>
+            <button onclick="testFullSystem()">Test Complete Flow</button>
+            <div id="fullResult" class="result"></div>
+        </div>
+
+        <div class="test-section">
+            <h3>4. Quick Links</h3>
+            <button onclick="window.open('http://localhost:3000', '_blank')">Open Frontend</button>
+            <button onclick="window.open('http://127.0.0.1:8000/docs', '_blank')">Open ML API Docs</button>
+            <button onclick="window.open('http://localhost:5000/api/doctors', '_blank')">Test Backend</button>
+        </div>
+    </div>
+
+    <script>
+        async function testMLService() {
+            const resultDiv = document.getElementById('mlResult');
+            const testDiv = document.getElementById('mlTest');
+            
+            resultDiv.textContent = 'Testing ML service...';
+            testDiv.className = 'test-section loading';
+            
+            try {
+                const response = await fetch('http://127.0.0.1:8000/predict', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        symptoms: {
+                            chest_pain: true,
+                            headache: true
+                        }
+                    })
+                });
+                
+                if (response.ok) {
+                    const data = await response.json();
+                    resultDiv.textContent = `✅ ML Service Working!\nDiagnoses found: ${data.diagnoses.length}\n\n` + 
+                        JSON.stringify(data, null, 2);
+                    testDiv.className = 'test-section success';
+                } else {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+            } catch (error) {
+                resultDiv.textContent = `❌ ML Service Error:\n${error.message}\n\nMake sure to start: python simple_api.py`;
+                testDiv.className = 'test-section error';
+            }
+        }
+
+        async function testBackendService() {
+            const resultDiv = document.getElementById('backendResult');
+            const testDiv = document.getElementById('backendTest');
+            
+            resultDiv.textContent = 'Testing backend service...';
+            testDiv.className = 'test-section loading';
+            
+            try {
+                const response = await fetch('http://localhost:5000/api/specialist/enhanced-predict', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        symptoms: {
+                            chest_pain: true,
+                            headache: true
+                        }
+                    })
+                });
+                
+                if (response.ok) {
+                    const data = await response.json();
+                    resultDiv.textContent = `✅ Backend Service Working!\nDiagnoses: ${data.diagnoses?.length || 0}\nRecommendations: ${data.specialistRecommendations?.recommendations?.length || 0}\n\n` + 
+                        JSON.stringify(data, null, 2);
+                    testDiv.className = 'test-section success';
+                } else {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+            } catch (error) {
+                resultDiv.textContent = `❌ Backend Service Error:\n${error.message}\n\nMake sure backend is running on port 5000`;
+                testDiv.className = 'test-section error';
+            }
+        }
+
+        async function testFullSystem() {
+            const resultDiv = document.getElementById('fullResult');
+            const testDiv = document.getElementById('fullTest');
+            
+            resultDiv.textContent = 'Testing complete system flow...';
+            testDiv.className = 'test-section loading';
+            
+            try {
+                // Test ML Service
+                const mlResponse = await fetch('http://127.0.0.1:8000/predict', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ symptoms: { chest_pain: true, fatigue: true } })
+                });
+                
+                if (!mlResponse.ok) throw new Error('ML Service failed');
+                
+                // Test Backend Service
+                const backendResponse = await fetch('http://localhost:5000/api/specialist/enhanced-predict', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ symptoms: { chest_pain: true, fatigue: true } })
+                });
+                
+                if (!backendResponse.ok) throw new Error('Backend Service failed');
+                
+                const backendData = await backendResponse.json();
+                
+                resultDiv.textContent = `✅ Full System Working!\n\n` +
+                    `Diagnoses: ${backendData.diagnoses?.length || 0}\n` +
+                    `Specialist Recommendations: ${backendData.specialistRecommendations?.recommendations?.length || 0}\n` +
+                    `Confidence Analysis: ${backendData.confidence ? 'Available' : 'Not Available'}\n\n` +
+                    `🎉 Your enhanced doctor recommender system is fully functional!\n\n` +
+                    `You can now:\n` +
+                    `- Select multiple symptoms with severity levels\n` +
+                    `- Get disease predictions with confidence scores\n` +
+                    `- Receive specialist recommendations with urgency levels\n` +
+                    `- Answer follow-up questions for better accuracy`;
+                    
+                testDiv.className = 'test-section success';
+                
+            } catch (error) {
+                resultDiv.textContent = `❌ System Error:\n${error.message}\n\nPlease check that all services are running:\n1. ML Service (port 8000)\n2. Backend (port 5000)\n3. Frontend (port 3000)`;
+                testDiv.className = 'test-section error';
+            }
+        }
+    </script>
+</body>
+</html>

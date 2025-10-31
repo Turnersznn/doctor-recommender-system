@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Recommender System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            padding: 40px;
+            text-align: center;
+            color: white;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .symptom-input {
+            margin-bottom: 30px;
+        }
+        
+        .symptom-input label {
+            display: block;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            color: #333;
+            font-weight: 600;
+        }
+        
+        .symptom-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .symptom-tag {
+            background: #f0f4ff;
+            border: 2px solid #e0e8ff;
+            padding: 10px 15px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.9em;
+        }
+        
+        .symptom-tag:hover {
+            background: #e0e8ff;
+            transform: translateY(-2px);
+        }
+        
+        .symptom-tag.selected {
+            background: #4facfe;
+            color: white;
+            border-color: #4facfe;
+        }
+        
+        .get-recommendations {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: block;
+            margin: 30px auto;
+        }
+        
+        .get-recommendations:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+        
+        .get-recommendations:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .recommendations {
+            margin-top: 40px;
+            display: none;
+        }
+        
+        .recommendations.show {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .recommendation-card {
+            background: linear-gradient(135deg, #f8faff 0%, #f0f4ff 100%);
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 5px solid #4facfe;
+            transition: all 0.3s ease;
+        }
+        
+        .recommendation-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .specialist-name {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .confidence-bar {
+            background: #e0e8ff;
+            height: 8px;
+            border-radius: 4px;
+            margin: 15px 0;
+            overflow: hidden;
+        }
+        
+        .confidence-fill {
+            background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.8s ease;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 10px;
+        }
+        
+        .selected-symptoms {
+            background: #f8faff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 2px dashed #e0e8ff;
+        }
+        
+        .selected-symptoms h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .selected-symptom-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .selected-symptom-item {
+            background: #4facfe;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🩺 Doctor Recommender</h1>
+            <p>Get personalized doctor recommendations based on your symptoms</p>
+        </div>
+        
+        <div class="content">
+            <div class="symptom-input">
+                <label>Select your symptoms:</label>
+                <div class="symptom-tags" id="symptomTags">
+                    <!-- Symptoms will be populated by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="selected-symptoms" id="selectedSymptoms" style="display: none;">
+                <h3>Selected Symptoms:</h3>
+                <div class="selected-symptom-list" id="selectedSymptomList">
+                </div>
+            </div>
+            
+            <button class="get-recommendations" id="getRecommendations" disabled>
+                Get Doctor Recommendations
+            </button>
+            
+            <div class="recommendations" id="recommendations">
+                <h2 style="margin-bottom: 25px; color: #333;">Recommended Specialists:</h2>
+                <div id="recommendationList">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Sample data - in a real system, this would come from a database
+        const symptomDoctorData = {
+            // Cardiovascular symptoms
+            'chest_pain': ['Cardiologist', 'Internal Medicine', 'Emergency Medicine'],
+            'palpitations': ['Cardiologist', 'Internal Medicine'],
+            'breathlessness': ['Cardiologist', 'Pulmonologist', 'Internal Medicine'],
+            'dizziness': ['Cardiologist', 'Neurologist', 'Internal Medicine'],
+            
+            // Skin symptoms
+            'itching': ['Dermatologist', 'Allergist', 'Internal Medicine'],
+            'skin_rash': ['Dermatologist', 'Allergist', 'Internal Medicine'],
+            'red_spots': ['Dermatologist', 'Internal Medicine'],
+            'acne': ['Dermatologist'],
+            
+            // Digestive symptoms
+            'stomach_pain': ['Gastroenterologist', 'Internal Medicine', 'Emergency Medicine'],
+            'nausea': ['Gastroenterologist', 'Internal Medicine'],
+            'vomiting': ['Gastroenterologist', 'Internal Medicine', 'Emergency Medicine'],
+            'diarrhea': ['Gastroenterologist', 'Internal Medicine'],
+            'constipation': ['Gastroenterologist', 'Internal Medicine'],
+            
+            // Joint/Bone symptoms
+            'joint_pain': ['Rheumatologist', 'Orthopedist', 'Internal Medicine'],
+            'knee_pain': ['Orthopedist', 'Rheumatologist', 'Sports Medicine'],
+            'back_pain': ['Orthopedist', 'Neurologist', 'Physical Medicine'],
+            'stiffness': ['Rheumatologist', 'Internal Medicine'],
+            
+            // Respiratory symptoms
+            'cough': ['Pulmonologist', 'Internal Medicine', 'ENT'],
+            'wheezing': ['Pulmonologist', 'Allergist'],
+            'sore_throat': ['ENT', 'Internal Medicine'],
+            
+            // Neurological symptoms
+            'headache': ['Neurologist', 'Internal Medicine'],
+            'memory_loss': ['Neurologist', 'Psychiatrist'],
+            'seizures': ['Neurologist', 'Emergency Medicine'],
+            
+            // General symptoms
+            'fever': ['Internal Medicine', 'Emergency Medicine'],
+            'fatigue': ['Internal Medicine', 'Endocrinologist'],
+            'weight_loss': ['Internal Medicine', 'Endocrinologist', 'Oncologist'],
+            'weight_gain': ['Internal Medicine', 'Endocrinologist']
+        };
+        
+        // Convert internal names to display names
+        const symptomDisplayNames = {
+            'chest_pain': 'Chest Pain',
+            'palpitations': 'Palpitations',
+            'breathlessness': 'Breathlessness',
+            'dizziness': 'Dizziness',
+            'itching': 'Itching',
+            'skin_rash': 'Skin Rash',
+            'red_spots': 'Red Spots',
+            'acne': 'Acne',
+            'stomach_pain': 'Stomach Pain',
+            'nausea': 'Nausea',
+            'vomiting': 'Vomiting',
+            'diarrhea': 'Diarrhea',
+            'constipation': 'Constipation',
+            'joint_pain': 'Joint Pain',
+            'knee_pain': 'Knee Pain',
+            'back_pain': 'Back Pain',
+            'stiffness': 'Stiffness',
+            'cough': 'Cough',
+            'wheezing': 'Wheezing',
+            'sore_throat': 'Sore Throat',
+            'headache': 'Headache',
+            'memory_loss': 'Memory Loss',
+            'seizures': 'Seizures',
+            'fever': 'Fever',
+            'fatigue': 'Fatigue',
+            'weight_loss': 'Weight Loss',
+            'weight_gain': 'Weight Gain'
+        };
+        
+        let selectedSymptoms = [];
+        
+        // Initialize the symptom tags
+        function initializeSymptoms() {
+            const symptomTags = document.getElementById('symptomTags');
+            
+            Object.keys(symptomDisplayNames).forEach(symptom => {
+                const tag = document.createElement('div');
+                tag.className = 'symptom-tag';
+                tag.textContent = symptomDisplayNames[symptom];
+                tag.dataset.symptom = symptom;
+                
+                tag.addEventListener('click', () => toggleSymptom(symptom, tag));
+                symptomTags.appendChild(tag);
+            });
+        }
+        
+        // Toggle symptom selection
+        function toggleSymptom(symptom, element) {
+            if (selectedSymptoms.includes(symptom)) {
+                selectedSymptoms = selectedSymptoms.filter(s => s !== symptom);
+                element.classList.remove('selected');
+            } else {
+                selectedSymptoms.push(symptom);
+                element.classList.add('selected');
+            }
+            
+            updateSelectedSymptoms();
+            updateRecommendButton();
+        }
+        
+        // Update selected symptoms display
+        function updateSelectedSymptoms() {
+            const container = document.getElementById('selectedSymptoms');
+            const list = document.getElementById('selectedSymptomList');
+            
+            if (selectedSymptoms.length > 0) {
+                container.style.display = 'block';
+                list.innerHTML = selectedSymptoms
+                    .map(symptom => `<span class="selected-symptom-item">${symptomDisplayNames[symptom]}</span>`)
+                    .join('');
+            } else {
+                container.style.display = 'none';
+            }
+        }
+        
+        // Update recommendation button state
+        function updateRecommendButton() {
+            const button = document.getElementById('getRecommendations');
+            button.disabled = selectedSymptoms.length === 0;
+        }
+        
+        // Calculate recommendations
+        function getRecommendations() {
+            const doctorScores = {};
+            
+            // Count how many times each doctor appears for the selected symptoms
+            selectedSymptoms.forEach(symptom => {
+                const doctors = symptomDoctorData[symptom] || [];
+                doctors.forEach((doctor, index) => {
+                    if (!doctorScores[doctor]) {
+                        doctorScores[doctor] = { score: 0, symptoms: [] };
+                    }
+                    // Give higher weight to doctors listed first (more relevant)
+                    doctorScores[doctor].score += (doctors.length - index) * 10;
+                    doctorScores[doctor].symptoms.push(symptom);
+                });
+            });
+            
+            // Convert to array and sort by score
+            const recommendations = Object.entries(doctorScores)
+                .map(([doctor, data]) => ({
+                    specialist: doctor,
+                    confidence: Math.min(95, (data.score / selectedSymptoms.length) * 10),
+                    matchingSymptoms: data.symptoms.length,
+                    totalSymptoms: selectedSymptoms.length,
+                    matchPercentage: (data.symptoms.length / selectedSymptoms.length) * 100
+                }))
+                .sort((a, b) => b.confidence - a.confidence)
+                .slice(0, 5); // Top 5 recommendations
+            
+            displayRecommendations(recommendations);
+        }
+        
+        // Display recommendations
+        function displayRecommendations(recommendations) {
+            const container = document.getElementById('recommendations');
+            const list = document.getElementById('recommendationList');
+            
+            list.innerHTML = recommendations.map((rec, index) => `
+                <div class="recommendation-card">
+                    <div class="specialist-name">${index + 1}. ${rec.specialist}</div>
+                    <div class="confidence-bar">
+                        <div class="confidence-fill" style="width: ${rec.confidence}%"></div>
+                    </div>
+                    <div class="stats">
+                        <span><strong>Confidence:</strong> ${rec.confidence.toFixed(1)}%</span>
+                        <span><strong>Symptom Match:</strong> ${rec.matchingSymptoms}/${rec.totalSymptoms} (${rec.matchPercentage.toFixed(1)}%)</span>
+                    </div>
+                </div>
+            `).join('');
+            
+            container.classList.add('show');
+            container.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // Event listeners
+        document.getElementById('getRecommendations').addEventListener('click', getRecommendations);
+        
+        // Initialize the app
+        initializeSymptoms();
+    </script>
+</body>
+</html>

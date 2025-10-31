@@ -1,0 +1,40 @@
+{
+  "favorites": {
+    "DemoUser": [
+      {
+        "doctorId": "MADHAVA-ABBURI-7000-NORTH-MOPAC-AUSTIN-TX",
+        "doctorName": "MADHAVA ABBURI",
+        "specialty": "Internal Medicine",
+        "location": "7000 NORTH MOPAC AUSTIN TX",
+        "addedAt": "2025-07-31T14:58:30.350Z"
+      }
+    ],
+    "fastest": [
+      {
+        "doctorId": "SUMAIRA-AASI-450-BROADWAY-ST-REDWOOD-CITY-CA",
+        "doctorName": "SUMAIRA AASI",
+        "specialty": "Dermatology, MOHS-Micrographic Surgery",
+        "location": "450 BROADWAY ST REDWOOD CITY CA",
+        "addedAt": "2025-07-31T17:06:40.373Z"
+      }
+    ],
+    "lex": [
+      {
+        "doctorId": "ADVANCED-CARDIOVASCULAR,-LLC-1649-HIGHWAY-22-W-ALEXANDER-CITY-AL",
+        "doctorName": "ADVANCED CARDIOVASCULAR, LLC",
+        "specialty": "Internal Medicine, Cardiovascular Disease",
+        "location": "1649 HIGHWAY 22 W ALEXANDER CITY AL",
+        "addedAt": "2025-07-31T17:43:52.780Z"
+      }
+    ],
+    "man": [
+      {
+        "doctorId": "SCOTT-H-GOODMAN-OMAHA,-NE",
+        "doctorName": "SCOTT H GOODMAN",
+        "specialty": "Neurology Physician",
+        "location": "OMAHA, NE",
+        "addedAt": "2025-08-07T23:42:22.270Z"
+      }
+    ]
+  }
+}

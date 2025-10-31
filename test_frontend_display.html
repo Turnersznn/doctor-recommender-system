@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Display Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .test-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .disease-card {
+            border: 2px solid #e5e7eb;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .disease-rank {
+            background: #10b981;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .probability-bar {
+            background: #f1f5f9;
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 5px 0;
+        }
+        .probability-fill {
+            height: 100%;
+            background: #10b981;
+            border-radius: 4px;
+        }
+        .specialist-card {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            color: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .specialist-avatar {
+            font-size: 3rem;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔬 Medical Analysis Results</h1>
+    <p>Preview of how the enhanced frontend will display ML predictions:</p>
+
+    <div class="test-card">
+        <h2>🦠 Likely Diseases</h2>
+        <p>Based on your symptoms, here are the most probable conditions:</p>
+        
+        <div class="disease-card">
+            <div class="disease-rank">#1</div>
+            <div style="flex: 1;">
+                <h4 style="margin: 0 0 8px 0;">Fungal Infection</h4>
+                <div class="probability-bar">
+                    <div class="probability-fill" style="width: 75%;"></div>
+                </div>
+                <span style="font-size: 0.85rem; color: #374151;">75.0% likelihood</span>
+            </div>
+        </div>
+
+        <div class="disease-card">
+            <div class="disease-rank" style="background: #f59e0b;">#2</div>
+            <div style="flex: 1;">
+                <h4 style="margin: 0 0 8px 0;">Dermatitis</h4>
+                <div class="probability-bar">
+                    <div class="probability-fill" style="width: 45%; background: #f59e0b;"></div>
+                </div>
+                <span style="font-size: 0.85rem; color: #374151;">45.0% likelihood</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="specialist-card">
+        <div class="specialist-avatar">🧴</div>
+        <div>
+            <h3 style="margin: 0 0 8px 0;">Dermatologist</h3>
+            <p style="margin: 0 0 15px 0; opacity: 0.9;">Specializes in skin, hair, and nail conditions</p>
+            <div style="background: rgba(255,255,255,0.3); height: 6px; border-radius: 3px; margin-bottom: 5px;">
+                <div style="width: 85%; height: 100%; background: white; border-radius: 3px;"></div>
+            </div>
+            <span style="font-size: 0.85rem; opacity: 0.9;">85.0% confidence</span>
+        </div>
+    </div>
+
+    <div class="test-card">
+        <h2>🏥 Alternative Specialists</h2>
+        <p>You may also consider consulting with these specialists:</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+            <div style="border: 1px solid #e5e7eb; border-radius: 10px; padding: 15px; display: flex; align-items: center; gap: 10px;">
+                <div style="font-size: 2rem; background: #f3f4f6; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">👨‍⚕️</div>
+                <div>
+                    <div style="font-weight: 600; color: #1f2937;">General Practitioner</div>
+                    <div style="font-size: 0.8rem; color: #6b7280;">Primary healthcare</div>
+                </div>
+            </div>
+            
+            <div style="border: 1px solid #e5e7eb; border-radius: 10px; padding: 15px; display: flex; align-items: center; gap: 10px;">
+                <div style="font-size: 2rem; background: #f3f4f6; border-radius: 50%; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;">🏥</div>
+                <div>
+                    <div style="font-weight: 600; color: #1f2937;">Internal Medicine</div>
+                    <div style="font-size: 0.8rem; color: #6b7280;">Adult internal medicine</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 8px; padding: 20px; margin: 20px 0;">
+        <h3 style="color: #0369a1; margin: 0 0 10px 0;">💡 How This Works</h3>
+        <p style="color: #075985; margin: 0; font-size: 0.9rem;">
+            The ML model analyzes your symptom combinations and provides:
+            <br>• <strong>Disease predictions</strong> with likelihood percentages
+            <br>• <strong>Primary specialist</strong> recommendation with confidence score
+            <br>• <strong>Alternative specialists</strong> for comprehensive care
+            <br>• <strong>Clear explanations</strong> for each recommendation
+        </p>
+    </div>
+</body>
+</html>

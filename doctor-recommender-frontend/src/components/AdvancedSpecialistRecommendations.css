@@ -1,0 +1,415 @@
+.advanced-specialist-recommendations {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0;
+}
+
+/* Urgency Alerts */
+.urgency-alert {
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  border: 2px solid;
+}
+
+.urgency-alert.urgent {
+  background: #FEF2F2;
+  border-color: #DC2626;
+}
+
+.urgency-alert.semi-urgent {
+  background: #FFFBEB;
+  border-color: #D97706;
+}
+
+.alert-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.alert-icon {
+  font-size: 1.5rem;
+}
+
+.urgency-alert h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.urgency-alert.urgent h3 {
+  color: #DC2626;
+}
+
+.urgency-alert.semi-urgent h3 {
+  color: #D97706;
+}
+
+.urgency-alert p {
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.urgency-alert.urgent p {
+  color: #7F1D1D;
+}
+
+.urgency-alert.semi-urgent p {
+  color: #92400E;
+}
+
+/* Section Header */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #E5E7EB;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1F2937;
+  margin: 0;
+}
+
+.section-icon {
+  font-size: 1.5rem;
+}
+
+.urgency-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: #F9FAFB;
+  border-radius: 20px;
+  border: 1px solid #E5E7EB;
+}
+
+.urgency-icon {
+  font-size: 1.2rem;
+}
+
+.urgency-text {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Recommendations List */
+.recommendations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.recommendation-card {
+  background: white;
+  border: 2px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.recommendation-card:hover {
+  border-color: #3B82F6;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+  transform: translateY(-2px);
+}
+
+.recommendation-card.expanded {
+  border-color: #3B82F6;
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.2);
+}
+
+.recommendation-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.rank-badge {
+  background: #3B82F6;
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.specialist-info {
+  flex: 1;
+}
+
+.specialist-name {
+  margin: 0 0 8px 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #1F2937;
+}
+
+.specialist-description {
+  margin: 0 0 12px 0;
+  color: #6B7280;
+  line-height: 1.5;
+}
+
+.badges-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.priority-badge, .urgency-badge, .confidence-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: white;
+}
+
+.confidence-badge {
+  background: #6B7280;
+}
+
+.confidence-badge.high {
+  background: #10B981;
+}
+
+.confidence-badge.moderate {
+  background: #F59E0B;
+}
+
+.confidence-badge.low {
+  background: #EF4444;
+}
+
+.expand-toggle {
+  font-size: 1.2rem;
+  color: #6B7280;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.recommendation-card.expanded .expand-toggle {
+  transform: rotate(90deg);
+}
+
+/* Recommendation Details */
+.recommendation-details {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #E5E7EB;
+}
+
+.detail-section {
+  margin-bottom: 20px;
+}
+
+.detail-section h5 {
+  margin: 0 0 10px 0;
+  color: #374151;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.detail-section p {
+  margin: 0;
+  color: #6B7280;
+  line-height: 1.6;
+}
+
+.timeline-info {
+  background: #F0F9FF;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border-left: 4px solid #3B82F6;
+}
+
+.timeline-text {
+  font-weight: 500;
+  color: #1E40AF;
+}
+
+.expertise-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.expertise-tag {
+  background: #EEF2FF;
+  color: #3730A3;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.alternatives-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.alternative-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px;
+  background: #F9FAFB;
+  border-radius: 6px;
+}
+
+.alternative-name {
+  font-weight: 500;
+  color: #374151;
+}
+
+.alternative-reason {
+  font-size: 0.85rem;
+  color: #6B7280;
+}
+
+.questions-list, .preparation-list {
+  margin: 0;
+  padding-left: 20px;
+  color: #6B7280;
+}
+
+.questions-list li, .preparation-list li {
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+/* Overall Advice */
+.overall-advice {
+  background: #F0FDF4;
+  border: 1px solid #BBF7D0;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.overall-advice h4 {
+  margin: 0 0 15px 0;
+  color: #166534;
+  font-weight: 600;
+}
+
+.overall-advice ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #166534;
+}
+
+.overall-advice li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* Additional Resources */
+.additional-resources {
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.additional-resources h4 {
+  margin: 0 0 20px 0;
+  color: #1E293B;
+  font-weight: 600;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.resource-item {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #E2E8F0;
+}
+
+.resource-item h5 {
+  margin: 0 0 8px 0;
+  color: #1E293B;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.resource-item p {
+  margin: 0;
+  color: #64748B;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .advanced-specialist-recommendations {
+    margin: 10px;
+  }
+  
+  .section-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+  
+  .recommendation-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .badges-row {
+    justify-content: flex-start;
+  }
+  
+  .resources-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .urgency-indicator {
+    align-self: stretch;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .recommendation-card {
+    padding: 15px;
+  }
+  
+  .specialist-name {
+    font-size: 1.2rem;
+  }
+  
+  .section-title {
+    font-size: 1.2rem;
+  }
+  
+  .detail-section {
+    margin-bottom: 15px;
+  }
+}

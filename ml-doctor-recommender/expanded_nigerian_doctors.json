@@ -1,0 +1,946 @@
+[
+  [
+    "Lagos",
+    {
+      "result_count": 10,
+      "results": [
+        {
+          "created_epoch": "1334358068000",
+          "enumeration_type": "NPI-1",
+          "last_updated_epoch": "1334358068000",
+          "number": "1043577042",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "456 Ikoyi Medical Center",
+              "city": "Lagos",
+              "state": "Lagos",
+              "postal_code": "101001",
+              "telephone_number": "+234-1-234-5678"
+            }
+          ],
+          "basic": {
+            "first_name": "ADEBAYO",
+            "last_name": "OGUNDIMU",
+            "middle_name": "OLUMIDE",
+            "credential": "MBBS, FMCP",
+            "gender": "M"
+          },
+          "taxonomies": [
+            {
+              "desc": "Internal Medicine",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "created_epoch": "1602875833000",
+          "enumeration_type": "NPI-1",
+          "last_updated_epoch": "1602875833000",
+          "number": "1871191262",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "789 Surulere Medical Plaza",
+              "city": "Lagos",
+              "state": "Lagos",
+              "postal_code": "101001",
+              "telephone_number": "+234-1-345-6789"
+            }
+          ],
+          "basic": {
+            "first_name": "FOLAKE",
+            "last_name": "ADEYEMI",
+            "middle_name": "OMOLARA",
+            "credential": "MBBS, FWACP",
+            "gender": "F"
+          },
+          "taxonomies": [
+            {
+              "desc": "Family Medicine",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "created_epoch": "1234567890000",
+          "enumeration_type": "NPI-1",
+          "last_updated_epoch": "1234567890000",
+          "number": "1234567890",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "Dental Center Lagos Island",
+              "city": "Lagos",
+              "state": "Lagos",
+              "postal_code": "101001",
+              "telephone_number": "+234-1-890-1234"
+            }
+          ],
+          "basic": {
+            "first_name": "ADUNNI",
+            "last_name": "OLATUNJI",
+            "middle_name": "BUKOLA",
+            "credential": "BDS, FWACS",
+            "gender": "F"
+          },
+          "taxonomies": [
+            {
+              "desc": "Dentist, General Practice",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "created_epoch": "1345678901000",
+          "enumeration_type": "NPI-1",
+          "last_updated_epoch": "1345678901000",
+          "number": "1345678901",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "Ikeja Dental Clinic",
+              "city": "Lagos",
+              "state": "Lagos",
+              "postal_code": "101001",
+              "telephone_number": "+234-1-901-2345"
+            }
+          ],
+          "basic": {
+            "first_name": "BIODUN",
+            "last_name": "ADESANYA",
+            "middle_name": "OLUMUYIWA",
+            "credential": "BDS, FMCDS",
+            "gender": "M"
+          },
+          "taxonomies": [
+            {
+              "desc": "Dentist, Oral and Maxillofacial Surgery",
+              "primary": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    "Abuja",
+    {
+      "result_count": 8,
+      "results": [
+        {
+          "created_epoch": "1662755407000",
+          "enumeration_type": "NPI-2",
+          "last_updated_epoch": "1662755407000",
+          "number": "1548981236",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "National Hospital Abuja",
+              "city": "Abuja",
+              "state": "FCT",
+              "postal_code": "900001",
+              "telephone_number": "+234-9-234-5678"
+            }
+          ],
+          "basic": {
+            "first_name": "AMINA",
+            "last_name": "HASSAN",
+            "middle_name": "KHADIJA",
+            "credential": "MBBS, FMCPaed",
+            "gender": "F"
+          },
+          "taxonomies": [
+            {
+              "desc": "Pediatrics",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "created_epoch": "1456789012000",
+          "enumeration_type": "NPI-1",
+          "last_updated_epoch": "1456789012000",
+          "number": "1456789012",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "Abuja Dental Specialists",
+              "city": "Abuja",
+              "state": "FCT",
+              "postal_code": "900001",
+              "telephone_number": "+234-9-678-9012"
+            }
+          ],
+          "basic": {
+            "first_name": "FATIMA",
+            "last_name": "ALIYU",
+            "middle_name": "ZAINAB",
+            "credential": "BDS, FWACS",
+            "gender": "F"
+          },
+          "taxonomies": [
+            {
+              "desc": "Dentist, Pediatric Dentistry",
+              "primary": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    "Kano",
+    {
+      "result_count": 6,
+      "results": [
+        {
+          "created_epoch": "1531409705000",
+          "enumeration_type": "NPI-2",
+          "last_updated_epoch": "1640888192000",
+          "number": "1205312378",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "Aminu Kano Teaching Hospital",
+              "city": "Kano",
+              "state": "Kano",
+              "postal_code": "700001",
+              "telephone_number": "+234-64-123-456"
+            }
+          ],
+          "basic": {
+            "first_name": "IBRAHIM",
+            "last_name": "MUHAMMAD",
+            "middle_name": "SANI",
+            "credential": "MBBS, FMCP",
+            "gender": "M"
+          },
+          "taxonomies": [
+            {
+              "desc": "Internal Medicine",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "created_epoch": "1567890123000",
+          "enumeration_type": "NPI-1",
+          "last_updated_epoch": "1567890123000",
+          "number": "1567890123",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "Kano Dental Care Center",
+              "city": "Kano",
+              "state": "Kano",
+              "postal_code": "700001",
+              "telephone_number": "+234-64-456-789"
+            }
+          ],
+          "basic": {
+            "first_name": "MUSA",
+            "last_name": "GARBA",
+            "middle_name": "ALIYU",
+            "credential": "BDS, FMCDS",
+            "gender": "M"
+          },
+          "taxonomies": [
+            {
+              "desc": "Dentist, General Practice",
+              "primary": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    "Port Harcourt",
+    {
+      "result_count": 5,
+      "results": [
+        {
+          "created_epoch": "1186452899000",
+          "enumeration_type": "NPI-2",
+          "last_updated_epoch": "1665160993000",
+          "number": "1760673586",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "University of Port Harcourt Teaching Hospital",
+              "city": "Port Harcourt",
+              "state": "Rivers",
+              "postal_code": "500001",
+              "telephone_number": "+234-84-234-567"
+            }
+          ],
+          "basic": {
+            "first_name": "NGOZI",
+            "last_name": "EKEZIE",
+            "middle_name": "CHIOMA",
+            "credential": "MBBS, FMCPaed",
+            "gender": "F"
+          },
+          "taxonomies": [
+            {
+              "desc": "Pediatrics",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "created_epoch": "1678901234000",
+          "enumeration_type": "NPI-1",
+          "last_updated_epoch": "1678901234000",
+          "number": "1678901234",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "Port Harcourt Dental Clinic",
+              "city": "Port Harcourt",
+              "state": "Rivers",
+              "postal_code": "500001",
+              "telephone_number": "+234-84-456-789"
+            }
+          ],
+          "basic": {
+            "first_name": "BLESSING",
+            "last_name": "OKORO",
+            "middle_name": "CHIDINMA",
+            "credential": "BDS, FWACS",
+            "gender": "F"
+          },
+          "taxonomies": [
+            {
+              "desc": "Dentist, General Practice",
+              "primary": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    "Ibadan",
+    {
+      "result_count": 4,
+      "results": [
+        {
+          "created_epoch": "1150104133000",
+          "enumeration_type": "NPI-2",
+          "last_updated_epoch": "1625857156000",
+          "number": "1265474522",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "University College Hospital",
+              "city": "Ibadan",
+              "state": "Oyo",
+              "postal_code": "200001",
+              "telephone_number": "+234-2-123-4567"
+            }
+          ],
+          "basic": {
+            "first_name": "OLUMIDE",
+            "last_name": "ADEBAYO",
+            "middle_name": "TUNDE",
+            "credential": "MBBS, FMCN",
+            "gender": "M"
+          },
+          "taxonomies": [
+            {
+              "desc": "Psychiatry & Neurology, Neurology",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "created_epoch": "1789012345000",
+          "enumeration_type": "NPI-1",
+          "last_updated_epoch": "1789012345000",
+          "number": "1789012345",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "Ibadan Dental Hospital",
+              "city": "Ibadan",
+              "state": "Oyo",
+              "postal_code": "200001",
+              "telephone_number": "+234-2-456-7890"
+            }
+          ],
+          "basic": {
+            "first_name": "ADEOLA",
+            "last_name": "ADEYEMI",
+            "middle_name": "TEMITOPE",
+            "credential": "BDS, FMCDS",
+            "gender": "F"
+          },
+          "taxonomies": [
+            {
+              "desc": "Dentist, General Practice",
+              "primary": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    "Kaduna",
+    {
+      "result_count": 8,
+      "results": [
+        {
+          "created_epoch": "1590123456000",
+          "enumeration_type": "NPI-1",
+          "last_updated_epoch": "1590123456000",
+          "number": "1590123456",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "Ahmadu Bello University Teaching Hospital",
+              "city": "Kaduna",
+              "state": "Kaduna",
+              "postal_code": "800001",
+              "telephone_number": "+234-62-123-456"
+            }
+          ],
+          "basic": {
+            "first_name": "AISHA",
+            "last_name": "BELLO",
+            "middle_name": "FATIMA",
+            "credential": "MBBS, FMCP",
+            "gender": "F"
+          },
+          "taxonomies": [
+            {
+              "desc": "Internal Medicine",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "created_epoch": "1591234567000",
+          "enumeration_type": "NPI-1",
+          "last_updated_epoch": "1591234567000",
+          "number": "1591234567",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "Kaduna State University Teaching Hospital",
+              "city": "Kaduna",
+              "state": "Kaduna",
+              "postal_code": "800001",
+              "telephone_number": "+234-62-234-567"
+            }
+          ],
+          "basic": {
+            "first_name": "YUSUF",
+            "last_name": "AHMED",
+            "middle_name": "IBRAHIM",
+            "credential": "MBBS, FMCS",
+            "gender": "M"
+          },
+          "taxonomies": [
+            {
+              "desc": "Surgery, General",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "created_epoch": "1592345678000",
+          "enumeration_type": "NPI-1",
+          "last_updated_epoch": "1592345678000",
+          "number": "1592345678",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "Kaduna Dental Center",
+              "city": "Kaduna",
+              "state": "Kaduna",
+              "postal_code": "800001",
+              "telephone_number": "+234-62-345-678"
+            }
+          ],
+          "basic": {
+            "first_name": "ZAINAB",
+            "last_name": "USMAN",
+            "middle_name": "HAUWA",
+            "credential": "BDS, FMCDS",
+            "gender": "F"
+          },
+          "taxonomies": [
+            {
+              "desc": "Dentist, General Practice",
+              "primary": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    "Enugu",
+    {
+      "result_count": 7,
+      "results": [
+        {
+          "created_epoch": "1593456789000",
+          "enumeration_type": "NPI-1",
+          "last_updated_epoch": "1593456789000",
+          "number": "1593456789",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "University of Nigeria Teaching Hospital",
+              "city": "Enugu",
+              "state": "Enugu",
+              "postal_code": "400001",
+              "telephone_number": "+234-42-123-456"
+            }
+          ],
+          "basic": {
+            "first_name": "CHUKWUMA",
+            "last_name": "OKAFOR",
+            "middle_name": "EMEKA",
+            "credential": "MBBS, FMCP",
+            "gender": "M"
+          },
+          "taxonomies": [
+            {
+              "desc": "Internal Medicine",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "created_epoch": "1594567890000",
+          "enumeration_type": "NPI-1",
+          "last_updated_epoch": "1594567890000",
+          "number": "1594567890",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "Enugu State University Teaching Hospital",
+              "city": "Enugu",
+              "state": "Enugu",
+              "postal_code": "400001",
+              "telephone_number": "+234-42-234-567"
+            }
+          ],
+          "basic": {
+            "first_name": "ADAEZE",
+            "last_name": "NWANKWO",
+            "middle_name": "CHIOMA",
+            "credential": "MBBS, FMCPaed",
+            "gender": "F"
+          },
+          "taxonomies": [
+            {
+              "desc": "Pediatrics",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "created_epoch": "1595678901000",
+          "enumeration_type": "NPI-1",
+          "last_updated_epoch": "1595678901000",
+          "number": "1595678901",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "Enugu Dental Clinic",
+              "city": "Enugu",
+              "state": "Enugu",
+              "postal_code": "400001",
+              "telephone_number": "+234-42-345-678"
+            }
+          ],
+          "basic": {
+            "first_name": "IKECHUKWU",
+            "last_name": "ONYEKA",
+            "middle_name": "CHIDI",
+            "credential": "BDS, FWACS",
+            "gender": "M"
+          },
+          "taxonomies": [
+            {
+              "desc": "Dentist, General Practice",
+              "primary": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    "Jos",
+    {
+      "result_count": 6,
+      "results": [
+        {
+          "created_epoch": "1596789012000",
+          "enumeration_type": "NPI-1",
+          "last_updated_epoch": "1596789012000",
+          "number": "1596789012",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "Jos University Teaching Hospital",
+              "city": "Jos",
+              "state": "Plateau",
+              "postal_code": "930001",
+              "telephone_number": "+234-73-123-456"
+            }
+          ],
+          "basic": {
+            "first_name": "DANIEL",
+            "last_name": "GYANG",
+            "middle_name": "PWAJOK",
+            "credential": "MBBS, FMCP",
+            "gender": "M"
+          },
+          "taxonomies": [
+            {
+              "desc": "Internal Medicine",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "created_epoch": "1597890123000",
+          "enumeration_type": "NPI-1",
+          "last_updated_epoch": "1597890123000",
+          "number": "1597890123",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "Plateau Specialist Hospital",
+              "city": "Jos",
+              "state": "Plateau",
+              "postal_code": "930001",
+              "telephone_number": "+234-73-234-567"
+            }
+          ],
+          "basic": {
+            "first_name": "MARY",
+            "last_name": "DUNG",
+            "middle_name": "NANLE",
+            "credential": "MBBS, FWACS",
+            "gender": "F"
+          },
+          "taxonomies": [
+            {
+              "desc": "Obstetrics & Gynecology",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "created_epoch": "1598901234000",
+          "enumeration_type": "NPI-1",
+          "last_updated_epoch": "1598901234000",
+          "number": "1598901234",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "Jos Dental Care",
+              "city": "Jos",
+              "state": "Plateau",
+              "postal_code": "930001",
+              "telephone_number": "+234-73-345-678"
+            }
+          ],
+          "basic": {
+            "first_name": "GRACE",
+            "last_name": "MAFENG",
+            "middle_name": "DORCAS",
+            "credential": "BDS, FMCDS",
+            "gender": "F"
+          },
+          "taxonomies": [
+            {
+              "desc": "Dentist, General Practice",
+              "primary": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    "Benin City",
+    {
+      "result_count": 5,
+      "results": [
+        {
+          "created_epoch": "1599012345000",
+          "enumeration_type": "NPI-1",
+          "last_updated_epoch": "1599012345000",
+          "number": "1599012345",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "University of Benin Teaching Hospital",
+              "city": "Benin City",
+              "state": "Edo",
+              "postal_code": "300001",
+              "telephone_number": "+234-52-123-456"
+            }
+          ],
+          "basic": {
+            "first_name": "OSAZE",
+            "last_name": "OMOREGIE",
+            "middle_name": "EGHOSA",
+            "credential": "MBBS, FMCP",
+            "gender": "M"
+          },
+          "taxonomies": [
+            {
+              "desc": "Internal Medicine",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "created_epoch": "1600123456000",
+          "enumeration_type": "NPI-1",
+          "last_updated_epoch": "1600123456000",
+          "number": "1600123456",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "Central Hospital Benin",
+              "city": "Benin City",
+              "state": "Edo",
+              "postal_code": "300001",
+              "telephone_number": "+234-52-234-567"
+            }
+          ],
+          "basic": {
+            "first_name": "ITOHAN",
+            "last_name": "AIGBOKHAN",
+            "middle_name": "OSAGIE",
+            "credential": "MBBS, FMCPaed",
+            "gender": "F"
+          },
+          "taxonomies": [
+            {
+              "desc": "Pediatrics",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "created_epoch": "1601234567000",
+          "enumeration_type": "NPI-1",
+          "last_updated_epoch": "1601234567000",
+          "number": "1601234567",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "Benin Dental Hospital",
+              "city": "Benin City",
+              "state": "Edo",
+              "postal_code": "300001",
+              "telephone_number": "+234-52-345-678"
+            }
+          ],
+          "basic": {
+            "first_name": "EHIS",
+            "last_name": "OKODUWA",
+            "middle_name": "OSAYANDE",
+            "credential": "BDS, FWACS",
+            "gender": "M"
+          },
+          "taxonomies": [
+            {
+              "desc": "Dentist, General Practice",
+              "primary": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  [
+    "Ilorin",
+    {
+      "result_count": 4,
+      "results": [
+        {
+          "created_epoch": "1602345678000",
+          "enumeration_type": "NPI-1",
+          "last_updated_epoch": "1602345678000",
+          "number": "1602345678",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "University of Ilorin Teaching Hospital",
+              "city": "Ilorin",
+              "state": "Kwara",
+              "postal_code": "240001",
+              "telephone_number": "+234-31-123-456"
+            }
+          ],
+          "basic": {
+            "first_name": "ABDULLAHI",
+            "last_name": "SALMAN",
+            "middle_name": "ALIU",
+            "credential": "MBBS, FMCP",
+            "gender": "M"
+          },
+          "taxonomies": [
+            {
+              "desc": "Internal Medicine",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "created_epoch": "1603456789000",
+          "enumeration_type": "NPI-1",
+          "last_updated_epoch": "1603456789000",
+          "number": "1603456789",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "Kwara State Specialist Hospital",
+              "city": "Ilorin",
+              "state": "Kwara",
+              "postal_code": "240001",
+              "telephone_number": "+234-31-234-567"
+            }
+          ],
+          "basic": {
+            "first_name": "KHADIJAT",
+            "last_name": "YUSUF",
+            "middle_name": "AISHA",
+            "credential": "MBBS, FWACS",
+            "gender": "F"
+          },
+          "taxonomies": [
+            {
+              "desc": "Obstetrics & Gynecology",
+              "primary": true
+            }
+          ]
+        },
+        {
+          "created_epoch": "1604567890000",
+          "enumeration_type": "NPI-1",
+          "last_updated_epoch": "1604567890000",
+          "number": "1604567890",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "Ilorin Dental Clinic",
+              "city": "Ilorin",
+              "state": "Kwara",
+              "postal_code": "240001",
+              "telephone_number": "+234-31-345-678"
+            }
+          ],
+          "basic": {
+            "first_name": "RASHEED",
+            "last_name": "OLADIMEJI",
+            "middle_name": "ADEBAYO",
+            "credential": "BDS, FMCDS",
+            "gender": "M"
+          },
+          "taxonomies": [
+            {
+              "desc": "Dentist, General Practice",
+              "primary": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+]

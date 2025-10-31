@@ -1,0 +1,145 @@
+{
+  "ratings": {
+    "901-SKINMD-PLLC-751-WALNUT-KNOLL-LANE-CORDOVA-TN": [
+      {
+        "rating": 3,
+        "review": "",
+        "userName": "Anonymous",
+        "timestamp": "2025-07-31T13:48:46.617Z"
+      },
+      {
+        "rating": 5,
+        "review": "",
+        "userName": "Anonymous",
+        "timestamp": "2025-07-31T13:48:54.496Z"
+      }
+    ],
+    "ARKANSAS-DERMATOLOGY-PLLC-9601-BAPTIST-HEALTH-DR-STE-860-LITTLE-ROCK-AR": [
+      {
+        "rating": 4,
+        "review": "",
+        "userName": "Anonymous",
+        "timestamp": "2025-07-31T13:49:01.329Z"
+      },
+      {
+        "rating": 5,
+        "review": "",
+        "userName": "Anonymous",
+        "timestamp": "2025-07-31T13:49:05.622Z"
+      },
+      {
+        "rating": 4,
+        "review": "good",
+        "userName": "Anonymous",
+        "timestamp": "2025-07-31T14:18:36.423Z"
+      }
+    ],
+    "MADHAVA-ABBURI-7000-NORTH-MOPAC-AUSTIN-TX": [
+      {
+        "rating": 5,
+        "review": "",
+        "userName": "DemoUser",
+        "timestamp": "2025-07-31T14:58:27.143Z"
+      }
+    ],
+    "ADVANCED-CARDIAC-SPECIALISTS,-CHARTERED-2005-HWY-60-GLOBE-AZ": [
+      {
+        "rating": 5,
+        "review": "",
+        "userName": "fastest",
+        "timestamp": "2025-07-31T16:45:18.347Z"
+      }
+    ],
+    "MARION-CARROLL-424-S-WILSON-AVE-PRICHARD-AL": [
+      {
+        "rating": 4,
+        "review": "",
+        "userName": "man",
+        "timestamp": "2025-08-04T10:45:50.244Z"
+      }
+    ],
+    "A-SYDNEY-WILLIAMS-AND-ASSOCIATES-INC-101-S-SAN-MATEO-DR-STE-306-SAN-MATEO-CA": [
+      {
+        "rating": 5,
+        "review": "",
+        "userName": "man",
+        "timestamp": "2025-08-14T07:31:43.015Z"
+      }
+    ],
+    "ADEBAYO-OGUNDIMU-456-Ikoyi-Medical-Center-Lagos-Lagos": [
+      {
+        "rating": 5,
+        "review": "",
+        "userName": "man",
+        "timestamp": "2025-08-23T18:47:23.936Z"
+      }
+    ],
+    "IBRAHIM-MUHAMMAD-Aminu-Kano-Teaching-Hospital-Kano-Kano": [
+      {
+        "rating": 1,
+        "review": "",
+        "userName": "man",
+        "timestamp": "2025-08-23T18:47:36.146Z"
+      }
+    ]
+  },
+  "reviews": {
+    "901-SKINMD-PLLC-751-WALNUT-KNOLL-LANE-CORDOVA-TN": [],
+    "ARKANSAS-DERMATOLOGY-PLLC-9601-BAPTIST-HEALTH-DR-STE-860-LITTLE-ROCK-AR": [
+      {
+        "rating": 4,
+        "review": "good",
+        "userName": "Anonymous",
+        "timestamp": "2025-07-31T14:18:36.423Z"
+      }
+    ],
+    "MADHAVA-ABBURI-7000-NORTH-MOPAC-AUSTIN-TX": [],
+    "ADVANCED-CARDIAC-SPECIALISTS,-CHARTERED-2005-HWY-60-GLOBE-AZ": [],
+    "MARION-CARROLL-424-S-WILSON-AVE-PRICHARD-AL": [],
+    "A-SYDNEY-WILLIAMS-AND-ASSOCIATES-INC-101-S-SAN-MATEO-DR-STE-306-SAN-MATEO-CA": [],
+    "ADEBAYO-OGUNDIMU-456-Ikoyi-Medical-Center-Lagos-Lagos": [],
+    "IBRAHIM-MUHAMMAD-Aminu-Kano-Teaching-Hospital-Kano-Kano": []
+  },
+  "statistics": {
+    "901-SKINMD-PLLC-751-WALNUT-KNOLL-LANE-CORDOVA-TN": {
+      "averageRating": 4,
+      "totalRatings": 2,
+      "totalReviews": 0
+    },
+    "ARKANSAS-DERMATOLOGY-PLLC-9601-BAPTIST-HEALTH-DR-STE-860-LITTLE-ROCK-AR": {
+      "averageRating": 4.3,
+      "totalRatings": 3,
+      "totalReviews": 1
+    },
+    "MADHAVA-ABBURI-7000-NORTH-MOPAC-AUSTIN-TX": {
+      "averageRating": 5,
+      "totalRatings": 1,
+      "totalReviews": 0
+    },
+    "ADVANCED-CARDIAC-SPECIALISTS,-CHARTERED-2005-HWY-60-GLOBE-AZ": {
+      "averageRating": 5,
+      "totalRatings": 1,
+      "totalReviews": 0
+    },
+    "MARION-CARROLL-424-S-WILSON-AVE-PRICHARD-AL": {
+      "averageRating": 4,
+      "totalRatings": 1,
+      "totalReviews": 0
+    },
+    "A-SYDNEY-WILLIAMS-AND-ASSOCIATES-INC-101-S-SAN-MATEO-DR-STE-306-SAN-MATEO-CA": {
+      "averageRating": 5,
+      "totalRatings": 1,
+      "totalReviews": 0
+    },
+    "ADEBAYO-OGUNDIMU-456-Ikoyi-Medical-Center-Lagos-Lagos": {
+      "averageRating": 5,
+      "totalRatings": 1,
+      "totalReviews": 0
+    },
+    "IBRAHIM-MUHAMMAD-Aminu-Kano-Teaching-Hospital-Kano-Kano": {
+      "averageRating": 1,
+      "totalRatings": 1,
+      "totalReviews": 0
+    }
+  }
+}

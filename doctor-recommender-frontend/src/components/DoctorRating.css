@@ -1,0 +1,173 @@
+.doctor-rating {
+  margin: 15px 0;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.rating-display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.rating-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rating-text {
+  font-size: 14px;
+  color: #666;
+}
+
+.no-rating {
+  color: #999;
+  font-style: italic;
+}
+
+.rate-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.rate-button:hover {
+  background-color: #0056b3;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.stars.display {
+  pointer-events: none;
+}
+
+.star {
+  font-size: 18px;
+  color: #ddd;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.star.filled {
+  color: #ffc107;
+}
+
+.stars:not(.display) .star:hover {
+  color: #ffc107;
+}
+
+.rating-form {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.submit-rating {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.submit-rating:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.submit-rating:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.existing-rating {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+.existing-rating p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.existing-rating .stars {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+/* Doctor card integration */
+.doctor-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 15px 0;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.doctor-card h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.doctor-card p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.doctor-specialty {
+  font-weight: 500;
+  color: #007bff;
+}
+
+.doctor-location {
+  font-size: 14px;
+  color: #888;
+} 

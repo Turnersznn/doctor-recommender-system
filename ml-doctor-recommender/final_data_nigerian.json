@@ -1,0 +1,611 @@
+[
+  [
+    "Lagos",
+    {
+      "result_count": 10,
+      "results": [
+        {
+          "created_epoch": "1334358068000",
+          "enumeration_type": "NPI-1",
+          "last_updated_epoch": "1334358068000",
+          "number": "1043577042",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "address_1": "123 Victoria Island Road",
+              "city": "Lagos",
+              "state": "Lagos",
+              "postal_code": "101001"
+            },
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "456 Ikoyi Medical Center",
+              "city": "Lagos",
+              "state": "Lagos",
+              "postal_code": "101001",
+              "telephone_number": "+234-1-234-5678"
+            }
+          ],
+          "practiceLocations": [],
+          "basic": {
+            "first_name": "ADEBAYO",
+            "last_name": "OGUNDIMU",
+            "middle_name": "OLUMIDE",
+            "credential": "MBBS, FMCP",
+            "sole_proprietor": "NO",
+            "gender": "M",
+            "enumeration_date": "2012-04-13",
+            "last_updated": "2012-04-13",
+            "status": "A",
+            "name_prefix": "Dr.",
+            "name_suffix": "--"
+          },
+          "taxonomies": [
+            {
+              "code": "207R00000X",
+              "taxonomy_group": "",
+              "desc": "Internal Medicine",
+              "state": "Lagos",
+              "license": "NG-IM-001",
+              "primary": true
+            }
+          ],
+          "identifiers": [],
+          "endpoints": [],
+          "other_names": []
+        },
+        {
+          "created_epoch": "1602875833000",
+          "enumeration_type": "NPI-1",
+          "last_updated_epoch": "1602875833000",
+          "number": "1871191262",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "address_1": "789 Surulere Medical Plaza",
+              "city": "Lagos",
+              "state": "Lagos",
+              "postal_code": "101001",
+              "telephone_number": "+234-1-345-6789"
+            },
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "789 Surulere Medical Plaza",
+              "city": "Lagos",
+              "state": "Lagos",
+              "postal_code": "101001",
+              "telephone_number": "+234-1-345-6789"
+            }
+          ],
+          "practiceLocations": [],
+          "basic": {
+            "first_name": "FOLAKE",
+            "last_name": "ADEYEMI",
+            "middle_name": "OMOLARA",
+            "credential": "MBBS, FWACP",
+            "sole_proprietor": "YES",
+            "gender": "F",
+            "enumeration_date": "2020-10-16",
+            "last_updated": "2020-10-16",
+            "certification_date": "2020-10-15",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "207Q00000X",
+              "taxonomy_group": "",
+              "desc": "Family Medicine",
+              "state": "Lagos",
+              "license": "NG-FM-002",
+              "primary": true
+            }
+          ],
+          "identifiers": [],
+          "endpoints": [],
+          "other_names": []
+        }
+      ]
+    }
+  ],
+  [
+    "Abuja",
+    {
+      "result_count": 10,
+      "results": [
+        {
+          "created_epoch": "1435590413000",
+          "enumeration_type": "NPI-1",
+          "last_updated_epoch": "1435590413000",
+          "number": "1962884742",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "address_1": "Central Business District",
+              "city": "Abuja",
+              "state": "FCT",
+              "postal_code": "900001",
+              "telephone_number": "+234-9-123-4567"
+            },
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "Garki Hospital Complex",
+              "city": "Abuja",
+              "state": "FCT",
+              "postal_code": "900001",
+              "telephone_number": "+234-9-234-5678"
+            }
+          ],
+          "practiceLocations": [],
+          "basic": {
+            "first_name": "CHINEDU",
+            "last_name": "OKWU",
+            "middle_name": "EMEKA",
+            "credential": "MBBS, FMCS",
+            "sole_proprietor": "NO",
+            "gender": "M",
+            "enumeration_date": "2015-06-29",
+            "last_updated": "2015-06-29",
+            "status": "A",
+            "name_prefix": "Dr.",
+            "name_suffix": "--"
+          },
+          "taxonomies": [
+            {
+              "code": "208600000X",
+              "taxonomy_group": "",
+              "desc": "Surgery, General",
+              "state": "FCT",
+              "license": "NG-SG-003",
+              "primary": true
+            }
+          ],
+          "identifiers": [],
+          "endpoints": [],
+          "other_names": []
+        },
+        {
+          "created_epoch": "1604506359000",
+          "enumeration_type": "NPI-2",
+          "last_updated_epoch": "1604506359000",
+          "number": "1013518216",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "Wuse II Medical Center",
+              "city": "Abuja",
+              "state": "FCT",
+              "postal_code": "900001",
+              "telephone_number": "+234-9-345-6789"
+            },
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "address_1": "P.O. Box 12345",
+              "city": "Abuja",
+              "state": "FCT",
+              "postal_code": "900001"
+            }
+          ],
+          "practiceLocations": [],
+          "basic": {
+            "first_name": "KEMI",
+            "last_name": "BABATUNDE",
+            "middle_name": "ADEOLA",
+            "credential": "MBBS, FWACS",
+            "sole_proprietor": "NO",
+            "gender": "F",
+            "enumeration_date": "2020-11-04",
+            "last_updated": "2020-11-04",
+            "certification_date": "2020-11-04",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "207W00000X",
+              "taxonomy_group": "",
+              "desc": "Ophthalmology",
+              "state": "FCT",
+              "license": "NG-OP-004",
+              "primary": true
+            }
+          ],
+          "identifiers": [],
+          "endpoints": [],
+          "other_names": []
+        }
+      ]
+    }
+  ],
+  [
+    "Kano",
+    {
+      "result_count": 8,
+      "results": [
+        {
+          "created_epoch": "1497286519000",
+          "enumeration_type": "NPI-1",
+          "last_updated_epoch": "1594689896000",
+          "number": "1750810859",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "address_1": "Sabon Gari Medical District",
+              "city": "Kano",
+              "state": "Kano",
+              "postal_code": "700001",
+              "telephone_number": "+234-64-123-456"
+            },
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "Aminu Kano Teaching Hospital",
+              "city": "Kano",
+              "state": "Kano",
+              "postal_code": "700001",
+              "telephone_number": "+234-64-234-567"
+            }
+          ],
+          "practiceLocations": [],
+          "basic": {
+            "first_name": "IBRAHIM",
+            "last_name": "MUHAMMAD",
+            "middle_name": "SANI",
+            "credential": "MBBS, FMCP",
+            "sole_proprietor": "NO",
+            "gender": "M",
+            "enumeration_date": "2017-06-12",
+            "last_updated": "2020-07-13",
+            "certification_date": "2020-07-13",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "207RC0000X",
+              "taxonomy_group": "",
+              "desc": "Internal Medicine, Cardiovascular Disease",
+              "state": "Kano",
+              "license": "NG-CD-005",
+              "primary": true
+            }
+          ],
+          "identifiers": [],
+          "endpoints": [],
+          "other_names": []
+        },
+        {
+          "created_epoch": "1336745557000",
+          "enumeration_type": "NPI-1",
+          "last_updated_epoch": "1506981576000",
+          "number": "1326307364",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "Murtala Muhammad Specialist Hospital",
+              "city": "Kano",
+              "state": "Kano",
+              "postal_code": "700001",
+              "telephone_number": "+234-64-345-678",
+              "fax_number": "+234-64-345-679"
+            },
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "address_1": "Murtala Muhammad Specialist Hospital",
+              "city": "Kano",
+              "state": "Kano",
+              "postal_code": "700001",
+              "telephone_number": "+234-64-345-678",
+              "fax_number": "+234-64-345-679"
+            }
+          ],
+          "practiceLocations": [],
+          "basic": {
+            "first_name": "HAUWA",
+            "last_name": "ABDULLAHI",
+            "middle_name": "FATIMA",
+            "credential": "MBBS, FWACS",
+            "sole_proprietor": "NO",
+            "gender": "F",
+            "enumeration_date": "2012-05-11",
+            "last_updated": "2017-10-02",
+            "status": "A",
+            "name_prefix": "Dr."
+          },
+          "taxonomies": [
+            {
+              "code": "207VG0400X",
+              "taxonomy_group": "",
+              "desc": "Obstetrics & Gynecology, Gynecology",
+              "state": "Kano",
+              "license": "NG-GY-006",
+              "primary": true
+            }
+          ],
+          "identifiers": [],
+          "endpoints": [],
+          "other_names": []
+        }
+      ]
+    }
+  ],
+  [
+    "Port Harcourt",
+    {
+      "result_count": 6,
+      "results": [
+        {
+          "created_epoch": "1662755407000",
+          "enumeration_type": "NPI-2",
+          "last_updated_epoch": "1662755407000",
+          "number": "1548981236",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "address_1": "Trans Amadi Industrial Layout",
+              "city": "Port Harcourt",
+              "state": "Rivers",
+              "postal_code": "500001",
+              "telephone_number": "+234-84-123-456",
+              "fax_number": "+234-84-123-457"
+            },
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "University of Port Harcourt Teaching Hospital",
+              "city": "Port Harcourt",
+              "state": "Rivers",
+              "postal_code": "500001",
+              "telephone_number": "+234-84-234-567",
+              "fax_number": "+234-84-234-568"
+            }
+          ],
+          "practiceLocations": [],
+          "basic": {
+            "first_name": "NGOZI",
+            "last_name": "EKEZIE",
+            "middle_name": "CHIOMA",
+            "credential": "MBBS, FMCPaed",
+            "sole_proprietor": "NO",
+            "gender": "F",
+            "enumeration_date": "2022-09-09",
+            "last_updated": "2022-09-09",
+            "certification_date": "2022-09-09",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "208000000X",
+              "taxonomy_group": "",
+              "desc": "Pediatrics",
+              "state": "Rivers",
+              "license": "NG-PD-007",
+              "primary": true
+            }
+          ],
+          "identifiers": [],
+          "endpoints": [],
+          "other_names": []
+        },
+        {
+          "created_epoch": "1310748288000",
+          "enumeration_type": "NPI-2",
+          "last_updated_epoch": "1311270146000",
+          "number": "1659669307",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "address_1": "GRA Phase II Medical Center",
+              "city": "Port Harcourt",
+              "state": "Rivers",
+              "postal_code": "500001",
+              "telephone_number": "+234-84-345-678",
+              "fax_number": "+234-84-345-679"
+            },
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "GRA Phase II Medical Center",
+              "city": "Port Harcourt",
+              "state": "Rivers",
+              "postal_code": "500001",
+              "telephone_number": "+234-84-345-678",
+              "fax_number": "+234-84-345-679"
+            }
+          ],
+          "practiceLocations": [],
+          "basic": {
+            "first_name": "EMEKA",
+            "last_name": "NWOSU",
+            "middle_name": "CHUKWUDI",
+            "credential": "MBBS, FMCS",
+            "sole_proprietor": "NO",
+            "gender": "M",
+            "enumeration_date": "2011-07-15",
+            "last_updated": "2011-07-21",
+            "status": "A",
+            "name_prefix": "Dr.",
+            "name_suffix": "--"
+          },
+          "taxonomies": [
+            {
+              "code": "2085R0001X",
+              "taxonomy_group": "",
+              "desc": "Radiology, Diagnostic Radiology",
+              "state": "Rivers",
+              "license": "NG-RD-008",
+              "primary": true
+            }
+          ],
+          "identifiers": [],
+          "endpoints": [],
+          "other_names": []
+        }
+      ]
+    }
+  ],
+  [
+    "Ibadan",
+    {
+      "result_count": 7,
+      "results": [
+        {
+          "created_epoch": "1320963052000",
+          "enumeration_type": "NPI-2",
+          "last_updated_epoch": "1640888656000",
+          "number": "1407133978",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "address_1": "Ring Road Medical District",
+              "city": "Ibadan",
+              "state": "Oyo",
+              "postal_code": "200001",
+              "telephone_number": "+234-2-123-4567"
+            },
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "University College Hospital",
+              "city": "Ibadan",
+              "state": "Oyo",
+              "postal_code": "200001",
+              "telephone_number": "+234-2-234-5678",
+              "fax_number": "+234-2-234-5679"
+            }
+          ],
+          "practiceLocations": [],
+          "basic": {
+            "first_name": "OLUMIDE",
+            "last_name": "ADEBAYO",
+            "middle_name": "TUNDE",
+            "credential": "MBBS, FMCN",
+            "sole_proprietor": "NO",
+            "gender": "M",
+            "enumeration_date": "2011-11-10",
+            "last_updated": "2021-12-30",
+            "certification_date": "2021-12-30",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "2084N0400X",
+              "taxonomy_group": "",
+              "desc": "Psychiatry & Neurology, Neurology",
+              "state": "Oyo",
+              "license": "NG-NE-009",
+              "primary": true
+            }
+          ],
+          "identifiers": [],
+          "endpoints": [],
+          "other_names": []
+        },
+        {
+          "created_epoch": "1531409705000",
+          "enumeration_type": "NPI-2",
+          "last_updated_epoch": "1640888192000",
+          "number": "1205312378",
+          "addresses": [
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "LOCATION",
+              "address_type": "DOM",
+              "address_1": "Adeoyo Maternity Teaching Hospital",
+              "city": "Ibadan",
+              "state": "Oyo",
+              "postal_code": "200001",
+              "telephone_number": "+234-2-345-6789",
+              "fax_number": "+234-2-345-6790"
+            },
+            {
+              "country_code": "NG",
+              "country_name": "Nigeria",
+              "address_purpose": "MAILING",
+              "address_type": "DOM",
+              "address_1": "Adeoyo Maternity Teaching Hospital",
+              "city": "Ibadan",
+              "state": "Oyo",
+              "postal_code": "200001",
+              "telephone_number": "+234-2-345-6789"
+            }
+          ],
+          "practiceLocations": [],
+          "basic": {
+            "first_name": "FUNMILAYO",
+            "last_name": "OGUNLEYE",
+            "middle_name": "ABISOLA",
+            "credential": "MBBS, FWACS",
+            "sole_proprietor": "NO",
+            "gender": "F",
+            "enumeration_date": "2018-07-12",
+            "last_updated": "2021-12-30",
+            "certification_date": "2021-12-30",
+            "status": "A"
+          },
+          "taxonomies": [
+            {
+              "code": "207V00000X",
+              "taxonomy_group": "",
+              "desc": "Obstetrics & Gynecology",
+              "state": "Oyo",
+              "license": "NG-OG-010",
+              "primary": true
+            }
+          ],
+          "identifiers": [],
+          "endpoints": [],
+          "other_names": []
+        }
+      ]
+    }
+  ]
+]
